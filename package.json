@@ -1,0 +1,27 @@
+{
+  "name": "screen-edit-mcp",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "description": "Unofficial local MCP tools for editing Recordly project copies and existing zoom effects.",
+  "license": "AGPL-3.0-only",
+  "bin": {
+    "screen-edit-mcp": "dist/index.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/index.js",
+    "test": "npm run build && node --test tests/*.test.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "typescript": "^5.7.2"
+  }
+}

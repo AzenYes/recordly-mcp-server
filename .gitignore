@@ -1,0 +1,15 @@
+node_modules/
+dist/
+.env*
+!.env.example
+*.recordly
+*.recordly.bak
+*.mp4
+*.wav
+*.log
+.mcp-backups/
+__pycache__/
+
+# Local-only editing workflow; excluded from this MCP distribution.
+/skills/
+/tests/test_conform.py
